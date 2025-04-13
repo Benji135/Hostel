@@ -1,9 +1,14 @@
 {
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.ts"
+        }
+    ],
     "rewrites": [
-      {
-        "source": "/:path*",
-        "destination": "/index.html"
-      }
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
     ]
-  }
-  
+}
