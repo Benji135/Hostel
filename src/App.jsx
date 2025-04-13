@@ -52,7 +52,7 @@ function AppRoutes() {
 
       {/* 👉 Move Routes here under Router context */}
       <Routes>
-        {/* <Route path='/' element={<Navigate to="/home" replace />} /> */}
+        <Route path='/' element={<Navigate to="/home" replace />} />
         <Route path='/join' element={<Login />} />
         <Route path='/' element={<Home />} />
         <Route path='/information' element={<Information />} />
