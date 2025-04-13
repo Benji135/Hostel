@@ -1,0 +1,60 @@
+@keyframes flipCharacter {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(180deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.spin-character {
+    user-select: none;
+    display: inline-block;
+    transform-origin: center;
+    transition: transform 0.6s ease-in-out;
+}
+
+h1:hover .spin-character {
+    animation: flipCharacter 0.6s ease-in-out forwards;
+}
+
+h1:hover .spin-character:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h1:hover .spin-character:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+h1:hover .spin-character:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+h1:hover .spin-character:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+h1:hover .spin-character:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+h1:hover .spin-character:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+h1:hover .spin-character:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+h1:hover .spin-character:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+h1:hover .spin-character:nth-child(9) {
+    animation-delay: 0.8s;
+}

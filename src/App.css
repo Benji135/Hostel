@@ -1,0 +1,19 @@
+/* Apply to the entire page */
+::-webkit-scrollbar {
+  width: 0px; /* You can adjust the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Set the background to transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; /* Make the scrollbar thumb transparent */
+  display: none;
+  width: 0px; /* Set the width of the scrollbar thumb */
+  height: 0px; /* Set the height of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; /* Keep it transparent on hover */
+}

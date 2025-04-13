@@ -1,0 +1,18 @@
+{
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.ts"
+        }
+    ],
+    "build": {
+        "env": {
+            "NODE_ENV": "production"
+        },
+        "functions": {
+            "api/index.ts": {
+                "maxDuration": 10
+            }
+        }
+    }
+}
