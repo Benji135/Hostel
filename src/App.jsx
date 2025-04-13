@@ -51,7 +51,7 @@ function MainLayout() {
     <>
       {showNavbar && <DropdownNavbar />}
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path='/' element={<Navigate to="/home" />} />
         <Route path='/join' element={<Login />} />
         <Route path='/home' element={<Home />} />
         <Route path='/information' element={<Information />} />
