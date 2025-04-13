@@ -57,7 +57,6 @@ function MainLayout() {
         <Route path='/information' element={<Information />} />
         <Route path='/reservations' element={<Reservations />} />
         <Route path='/location' element={<Location />} />
-        <Route path='/location' element={<Location />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/payment' element={<Payment />} />
       </Routes>
