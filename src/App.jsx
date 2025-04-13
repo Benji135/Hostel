@@ -34,24 +34,25 @@ function App() {
 
   return (
     <Router>
-      <MainLayout />
+      <AppRoutes />
     </Router>
   );
 }
 
-function MainLayout() {
+function AppRoutes() {
   const location = useLocation();
   const hideFooterPaths = ['/join', '/location', '/payment'];
   const hideNavbar = ['/join', '/payment'];
-  // const showNavbar = location.pathname !== '/join';
   const showFooter = !hideFooterPaths.includes(location.pathname);
   const showNavbar = !hideNavbar.includes(location.pathname);
 
   return (
     <>
       {showNavbar && <DropdownNavbar />}
+
+      {/* 👉 Move Routes here under Router context */}
       <Routes>
-        <Route path='/' element={<Navigate to="/home" />} />
+        <Route path='/' element={<Navigate to="/home" replace />} />
         <Route path='/join' element={<Login />} />
         <Route path='/home' element={<Home />} />
         <Route path='/information' element={<Information />} />
@@ -60,6 +61,7 @@ function MainLayout() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/payment' element={<Payment />} />
       </Routes>
+
       {showFooter && <Footer />}
     </>
   );
